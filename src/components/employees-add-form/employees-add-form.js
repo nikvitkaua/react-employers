@@ -58,6 +58,7 @@ class EmployeesAddForm extends Component {
                     <button
                         type="submit" 
                         className="btn btn-outline-light"
+                        disabled={this.state.name.length < 3 || !this.state.salary}
                     >
                         Добавить
                     </button>
